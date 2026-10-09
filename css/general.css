@@ -1,5 +1,11 @@
+html {
+  interpolate-size: allow-keywords;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
 body {
-  background-color: aqua;
+  background-color: rgb(255, 255, 255);
 }
 *,
 ::before,
@@ -7,13 +13,6 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-html {
-  interpolate-size: allow-keywords;
-  font-family: system-ui, sans-serif;
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
 }
 img,
 svg {
