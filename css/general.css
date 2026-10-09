@@ -12,6 +12,14 @@ html {
   font-family: h1;
   src: url(../fonts/ViaodaLibre-Regular.woff2);
 }
+@font-face {
+  font-family: h2;
+  src: url(../fonts/PoiretOne-Regular.woff2-kopi);
+}
+@font-face {
+  font-family: h3;
+  src: url(../fonts/PoiretOne-Regular.woff2-kopi);
+}
 body {
   background-color: rgb(255, 255, 255);
 }
@@ -30,4 +38,17 @@ svg {
 }
 h1 {
   letter-spacing: 1px;
+  font-weight: 400;
+  font-style: oblique;
+  font-size: 40px;
+}
+h2,
+h3,
+h4 {
+  font-weight: 100;
+  font-size: 26px;
+}
+p {
+  font-size: 18px;
+  font-weight: 100;
 }
