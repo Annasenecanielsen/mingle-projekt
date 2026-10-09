@@ -1,8 +1,16 @@
 html {
   interpolate-size: allow-keywords;
-  font-family: system-ui, sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+  font-family: p;
+  src: url(../fonts/Quicksand-VariableFont_wght.woff2);
+}
+@font-face {
+  font-family: h1;
+  src: url(../fonts/ViaodaLibre-Regular.woff2);
 }
 body {
   background-color: rgb(255, 255, 255);
@@ -19,4 +27,7 @@ svg {
   display: block;
   width: 100%;
   height: auto;
+}
+h1 {
+  letter-spacing: 1px;
 }
