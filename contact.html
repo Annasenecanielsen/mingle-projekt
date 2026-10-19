@@ -1,4 +1,4 @@
-!<!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,8 +8,56 @@
     <link rel="stylesheet" href="css/contact.css" />
   </head>
   <body>
-    <h1></h1>
-    <h3></h3>
-    <p></p>
+    <header>
+      <nav class="navbar">
+        <input type="checkbox" id="burger-toggle" />
+        <label for="burger-toggle" class="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <a href="index.html" class="mingle">Mingle</a>
+        <div class="menu-overlay">
+          <ul class="menu-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="userlist.html">Find Your Match</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="menu-footer">
+            <p>© Mingle 2026</p>
+            <a href="#"><img class="instagram" src="image/instagram.webp" alt="instagram logo" /></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="contact_hero">
+        <img id="contactimage" src="image/contact_hero.webp" alt="a couple playing guitar" />
+        <h1 class="abouttitle">Interract with Mingle</h1>
+      </section>
+      <div class="contact">
+        <h4>Get in touch!</h4>
+        <div class="container">
+          <input type="text" class="input-box" placeholder="Full name *" />
+          <input type="email" class="input-box" placeholder="E-mail *" />
+          <input type="number" class="input-box" placeholder="Phone number *" />
+          <input type="text" class="input-box" placeholder="Topic *" />
+          <textarea class="input-box" placeholder="Message *"></textarea>
+          <p id="errorMessage"></p>
+          <button type="button" onclick="showMessage()">Send</button>
+        </div>
+        <div class="success-message" id="messageBox">
+          <span class="close-btn" onclick="closeMessage()">x</span>
+          ❤️ Thank you for your message.<br /><br />
+          We will contact you ASAP!
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__logo">Mingle</div>
+      <small class="footer__copy">© Copyright – 2026 Mingle</small>
+    </footer>
   </body>
+  <script src="js/contact.js"></script>
 </html>

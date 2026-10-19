@@ -77,10 +77,10 @@ header {
   z-index: 1002;
 }
 .mingle {
-  position: absolute;
+  position: fixed;
   left: 50%;
   transform: translateX(-50%);
-  color: white;
+  color: rgb(234, 231, 231);
   font-family: p;
   font-size: 27px;
   font-weight: 400;
