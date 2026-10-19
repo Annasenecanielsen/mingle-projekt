@@ -30,6 +30,9 @@
   margin-bottom: 3rem;
   text-align: center;
 }
+#middiv p {
+  text-align: center;
+}
 #arrow {
   margin-left: 3rem;
   width: 110px;
@@ -69,13 +72,33 @@ h4 {
 .middiv_third p {
   width: 25rem;
   margin-top: 4rem;
-  margin-bottom: 4rem;
 }
 .middiv_third h4 {
   margin-top: 1rem;
+  font-size: 30px;
 }
 .middiv_third div p {
   text-align: end;
   width: 28rem;
   padding-left: 7rem;
+}
+#white_arrow {
+  width: 85px;
+  margin-left: 4rem;
+  rotate: 330deg;
+  transform: scaleX(-1);
+}
+#middiv_div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.btn {
+  margin: 5rem 6rem 1rem 1rem;
+  padding: 0.4rem;
+}
+.btn:hover {
+  background-color: #75090a;
+  border: 2px solid white;
+  color: white;
+  font-weight: 600;
 }
