@@ -64,3 +64,24 @@ p {
   border: 2px solid white;
   scale: 1.5;
 }
+.footer {
+  background: var(--wine);
+  color: var(--paper);
+  min-height: 270px;
+  padding: 2.5rem 2.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer__logo {
+  font-size: 1.6rem;
+}
+.footer__copy {
+  font-size: 0.7rem;
+  opacity: 0.8;
+}
+:root {
+  --wine: #75090a;
+  --ink: #111;
+  --paper: #fff;
+}
