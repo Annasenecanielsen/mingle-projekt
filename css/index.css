@@ -12,7 +12,7 @@
 
 body {
   font-family: var(--font);
-  font-style: italic;
+
   color: var(--ink);
   background: var(--paper);
   line-height: 1.5;
