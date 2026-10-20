@@ -9,7 +9,17 @@
   margin: 0;
   padding: 0;
 }
-
+h1,
+h2,
+h3,
+h4 {
+  font-family: h1;
+  font-weight: 200;
+}
+p {
+  font-family: p;
+  font-weight: 300;
+}
 body {
   font-family: var(--font);
   color: var(--ink);
@@ -40,8 +50,8 @@ img {
   color: var(--paper);
 }
 .btn:focus-visible {
-  outline: 3px solid var(--ink);
-  outline-offset: 3px;
+  outline: 1px solid var(--ink);
+  outline-offset: 1px;
 }
 .btn--large {
   font-size: 1.4rem;
