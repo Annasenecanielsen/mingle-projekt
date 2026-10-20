@@ -229,5 +229,61 @@ p {
   --ink: #111;
   --paper: #fff;
 }
+.desktop-menu {
+  display: none;
+}
 @media (min-width: 768px) {
+  .burger,
+  .navbar > .mingle,
+  .menu-overlay,
+  #burger-toggle {
+    display: none;
+  }
+  .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    z-index: 1000;
+  }
+  .desktop-menu {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    width: 100%;
+    padding: 0.1px 60px;
+  }
+  .desktop-left,
+  .desktop-right {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+  }
+  .desktop-left {
+    justify-content: flex-start;
+  }
+  .desktop-right {
+    justify-content: flex-end;
+  }
+  .desktop-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 100;
+    font-family: p;
+    transition: opacity 0.3s ease;
+  }
+  .desktop-menu a:hover {
+    color: whitesmoke;
+  }
+  .desktop-menu .desktop-logo {
+    display: block;
+    position: static;
+    transform: none;
+    font-family: p;
+    font-size: 40px;
+    font-weight: 100;
+    margin: 0;
+  }
 }
