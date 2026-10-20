@@ -1,3 +1,14 @@
+h1,
+h2,
+h3,
+h4 {
+  font-family: h1;
+  font-weight: 200;
+}
+p {
+  font-family: p;
+  font-weight: 300;
+}
 #contact_hero {
   position: relative;
   width: 100%;
@@ -11,21 +22,20 @@
   display: block;
   filter: brightness(0.7);
 }
-.abouttitle {
+.contacttitle {
   position: absolute;
   top: 85%;
   left: 51%;
   transform: translate(-50%, -50%);
   color: white;
-  font-weight: 900;
-  font-size: 55px;
+  font-size: 75px;
   width: 100%;
 }
 .contact {
   margin: 0.5rem;
   margin-bottom: 3rem;
 }
-.contact h4 {
+.contact h2 {
   margin-bottom: 2rem;
   font-size: 37px;
 }
@@ -92,11 +102,7 @@ button:hover {
     font-size: 70px;
     text-align: center;
   }
-  /* .input-box {
-    max-width: 700px;
-    display: flex;
-  } */
-  .contact h4 {
+  .contact h2 {
     max-width: 700px;
     font-size: 60px;
     margin-top: 10rem;

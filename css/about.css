@@ -5,12 +5,12 @@
 }
 h1,
 h2,
-h3 {
-  font-family: h1;
-}
+h3,
 h4 {
-  font-family: h3;
+  font-family: h1;
+  font-weight: 200;
 }
+
 p {
   font-family: p;
   font-weight: 300;
@@ -34,10 +34,8 @@ p {
   left: 51%;
   transform: translate(-50%, -50%);
   color: white;
-  font-weight: 500;
-  font-size: 55px;
+  font-size: 75px;
   width: 100%;
-  font-family: p;
 }
 .aboutcontent {
   margin: 0.6rem;
@@ -46,8 +44,6 @@ p {
   margin-top: 3rem;
   margin-bottom: 2rem;
   font-size: 29px;
-  font-weight: 400;
-  font-family: p;
 }
 #arrow {
   margin-left: 3rem;
@@ -90,9 +86,10 @@ h4 {
   width: 25rem;
   margin-top: 4rem;
 }
-.middiv_third h4 {
+.middiv_third h3 {
   margin-top: 1rem;
   font-size: 30px;
+  color: white;
 }
 .middiv_third div p {
   text-align: end;
@@ -181,7 +178,6 @@ h4 {
   text-align: center;
   z-index: 2;
   font-size: 35px;
-  font-weight: 600;
 }
 @keyframes imageFade {
   0% {
@@ -304,11 +300,11 @@ h4 {
     max-width: 800px;
     margin-top: 0;
     margin-bottom: 35px;
-    font-size: 50px;
+    font-size: 40px;
   }
   #middiv > p {
     max-width: 650px;
-    font-size: 23px;
+    font-size: 21px;
     line-height: 1.8;
   }
   .middiv_second {
@@ -337,7 +333,8 @@ h4 {
     padding: 20px 80px;
     border-radius: 20px;
   }
-  .middiv_third h4 {
+  .middiv_third h3 {
+    color: white;
     font-size: 55px;
     max-width: 800px;
     margin-top: 0;
