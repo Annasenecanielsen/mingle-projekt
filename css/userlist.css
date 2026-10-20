@@ -1,0 +1,192 @@
+.user-hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+#userimage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.7);
+}
+.usertitle {
+  position: absolute;
+  top: 85%;
+  left: 51%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: 500;
+  font-size: 55px;
+  width: 100%;
+  font-family: p;
+}
+.user-content {
+  padding: 40px 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.filter-section {
+  margin-bottom: 50px;
+}
+.filter-section h2 {
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.filter-section > p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+#filtre h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+#filtre details,
+#sortering details {
+  border-bottom: 1px solid #75090a;
+  padding: 18px 0;
+}
+#filtre summary,
+#sortering summary {
+  font-size: 18px;
+  font-weight: 400;
+  color: #75090a;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#filtre summary::-webkit-details-marker,
+#sortering summary::-webkit-details-marker {
+  display: none;
+}
+#filtre summary::after,
+#sortering summary::after {
+  content: "+";
+  font-size: 24px;
+  font-weight: 300;
+}
+#filtre details[open] summary::after,
+#sortering details[open] summary::after {
+  content: "−";
+}
+.filter-options {
+  padding-top: 20px;
+}
+.filter-options p {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+#filtre button,
+#sortering button {
+  background-color: transparent;
+  color: #75090a;
+  border: 1px solid #75090a;
+  padding: 10px 18px;
+  margin: 0 8px 10px 0;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#filtre button:hover,
+#sortering button:hover {
+  background-color: #75090a;
+  color: white;
+}
+#filtre > button {
+  margin-bottom: 15px;
+}
+.match-count {
+  font-size: 15px;
+  margin: 30px 0 15px;
+}
+.match-count span {
+  font-weight: 600;
+  color: #75090a;
+}
+#sortering {
+  margin-bottom: 30px;
+}
+.profiles-section h2 {
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+.userliste {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+.userliste a {
+  text-decoration: none;
+  color: inherit;
+}
+.card {
+  background-color: #f8f5f0;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 100%;
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  display: block;
+  background-color: #e8ded6;
+}
+.card h2 {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 15px 15px 5px;
+  margin: 0;
+}
+.card h3 {
+  font-size: 15px;
+  font-weight: 400;
+  padding: 0 15px 10px;
+  margin: 0;
+}
+.card p {
+  font-size: 14px;
+  padding: 0 15px 8px;
+  margin: 0;
+}
+.card p:last-child {
+  padding-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .user-hero h1 {
+    font-size: 65px;
+  }
+  .user-hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    overflow: hidden;
+  }
+  .user-content {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 50px;
+    padding: 70px 40px;
+    align-items: start;
+  }
+  .filter-section {
+    margin-bottom: 0;
+  }
+  .filter-section h2 {
+    font-size: 32px;
+  }
+  .userliste {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+}

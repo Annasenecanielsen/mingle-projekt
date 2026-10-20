@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="description" content="Discover meaningful connections on Mingle." />
+    <title>Find Your Match | Mingle</title>
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/userlist.css" />
-    <link rel="icon" type="image/png" href="image/favicon.png" />
+    <script src="js/userlist.js" defer></script>
   </head>
   <body>
     <header>
@@ -17,7 +18,7 @@
           <span></span>
           <span></span>
         </label>
-        <a href="index.html" class="desktop-logo mingle">Mingle</a>
+        <a href="index.html" class="mingle">Mingle</a>
         <div class="menu-overlay">
           <ul class="menu-links">
             <li><a href="index.html">Home</a></li>
@@ -27,9 +28,7 @@
           </ul>
           <div class="menu-footer">
             <p>© Mingle 2026</p>
-            <a href="#">
-              <img class="instagram" src="image/instagram.webp" alt="Instagram logo" />
-            </a>
+            <a href="#"><img class="instagram" src="image/instagram.webp" alt="Instagram logo" /></a>
           </div>
         </div>
         <div class="desktop-menu">
@@ -37,7 +36,7 @@
             <a href="index.html">Home</a>
             <a href="userlist.html">Find Your Match</a>
           </div>
-          <a href="index.html" class="desktop-logo">Mingle</a>
+          <a href="index.html" class="desktop-logo mingle">Mingle</a>
           <div class="desktop-right">
             <a href="about.html">About Us</a>
             <a href="contact.html">Contact</a>
@@ -45,5 +44,110 @@
         </div>
       </nav>
     </header>
+    <main>
+      <div class="user-hero">
+        <img id="userimage" src="image/cute.webp" alt="Two people holding hands" />
+        <h1 class="usertitle">Find Your Match</h1>
+      </div>
+      <section class="user-content">
+        <div class="filter-section">
+          <h2>Discover Your Type</h2>
+          <p>Choose your preferences and explore potential matches.</p>
+          <div id="filtre">
+            <h3>Filter Your Matches</h3>
+            <button type="button" data-kategori="all">All</button>
+            <details>
+              <summary>Eye Color</summary>
+              <div class="filter-options">
+                <button type="button" data-kategori="eyeColor">Brown</button>
+                <button type="button" data-kategori="eyeColor">Blue</button>
+                <button type="button" data-kategori="eyeColor">Green</button>
+                <button type="button" data-kategori="eyeColor">Amber</button>
+              </div>
+            </details>
+            <details>
+              <summary>Hair Color</summary>
+              <div class="filter-options">
+                <button type="button" data-kategori="hairColor">Brown</button>
+                <button type="button" data-kategori="hairColor">Black</button>
+                <button type="button" data-kategori="hairColor">Blonde</button>
+                <button type="button" data-kategori="hairColor">Red</button>
+              </div>
+            </details>
+            <details>
+              <summary>Gender</summary>
+              <div class="filter-options">
+                <button type="button" data-kategori="gender">male</button>
+                <button type="button" data-kategori="gender">female</button>
+              </div>
+            </details>
+            <details>
+              <summary>Age</summary>
+              <div class="filter-options">
+                <p>Minimum age</p>
+                <button type="button" data-kategori="age">18</button>
+                <button type="button" data-kategori="age">25</button>
+                <button type="button" data-kategori="age">30</button>
+                <button type="button" data-kategori="age">40</button>
+              </div>
+            </details>
+            <details>
+              <summary>Height</summary>
+              <div class="filter-options">
+                <p>Minimum height (cm)</p>
+                <button type="button" data-kategori="height">150</button>
+                <button type="button" data-kategori="height">160</button>
+                <button type="button" data-kategori="height">170</button>
+                <button type="button" data-kategori="height">180</button>
+              </div>
+            </details>
+            <details>
+              <summary>State</summary>
+              <div class="filter-options">
+                <button type="button" data-kategori="state">California</button>
+                <button type="button" data-kategori="state">Texas</button>
+                <button type="button" data-kategori="state">New York</button>
+              </div>
+            </details>
+            <details>
+              <summary>City</summary>
+              <div class="filter-options">
+                <button type="button" data-kategori="city">New York</button>
+                <button type="button" data-kategori="city">Chicago</button>
+                <button type="button" data-kategori="city">Los Angeles</button>
+              </div>
+            </details>
+            <details>
+              <summary>Education</summary>
+              <div class="filter-options">
+                <button type="button" data-kategori="university">University of Washington</button>
+                <button type="button" data-kategori="university">Ohio State University</button>
+              </div>
+            </details>
+          </div>
+          <p class="match-count">Matches found: <span id="visantal">0</span></p>
+          <div id="sortering">
+            <details>
+              <summary>Sort By</summary>
+              <div class="filter-options">
+                <button type="button">Age: Low to High</button>
+                <button type="button">Age: High to Low</button>
+                <button type="button">Height: Low to High</button>
+                <button type="button">Height: High to Low</button>
+                <button type="button">Name: A-Z</button>
+                <button type="button">Name: Z-A</button>
+              </div>
+            </details>
+          </div>
+        </div>
+        <section class="profiles-section">
+          <h2>Explore Profiles</h2>
+          <div class="userliste"></div>
+        </section>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>© Mingle 2026</p>
+    </footer>
   </body>
 </html>
