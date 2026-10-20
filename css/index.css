@@ -12,7 +12,6 @@
 
 body {
   font-family: var(--font);
-
   color: var(--ink);
   background: var(--paper);
   line-height: 1.5;
