@@ -109,3 +109,21 @@ img {
   font-size: 0.7rem;
   opacity: 0.8;
 }
+.image-container {
+  position: relative;
+  width: 100%;
+}
+
+.bottom-image {
+  width: 100%;
+  display: block;
+}
+
+.top-image {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  z-index: 1;
+}
