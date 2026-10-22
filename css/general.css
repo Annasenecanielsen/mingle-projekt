@@ -215,6 +215,7 @@ p {
   color: white;
 }
 .footer {
+  font-family: p;
   background: var(--wine);
   color: var(--paper);
   min-height: 270px;
@@ -225,7 +226,7 @@ p {
   margin-top: 5rem;
 }
 .footer__logo {
-  font-size: 1.6rem;
+  font-size: 20rem;
 }
 .footer__copy {
   font-size: 0.7rem;
